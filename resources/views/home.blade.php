@@ -2,7 +2,6 @@
 @section('title', 'Beranda')
 
 @section('content')
-{{-- Hero --}}
 <section class="rf-hero">
     <div class="container">
         <div class="row align-items-center g-5">
@@ -25,7 +24,6 @@
     </div>
 </section>
 
-{{-- Keunggulan --}}
 <section class="rf-perks">
     <div class="container">
         <div class="row g-0">
