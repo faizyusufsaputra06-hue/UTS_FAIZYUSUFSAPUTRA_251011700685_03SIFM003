@@ -22,7 +22,7 @@
 
     @include('partials.footer')
 
-    <script src="{{ asset('Bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js') }}"></script>
     @stack('scripts')
 </body>
 </html>
