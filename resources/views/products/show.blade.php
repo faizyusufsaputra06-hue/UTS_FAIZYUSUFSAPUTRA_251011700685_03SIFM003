@@ -29,15 +29,10 @@
                 </tbody>
             </table>
 
-            <form action="{{ route('checkout.create', $furniture) }}" method="GET" class="d-flex flex-wrap gap-3 align-items-center">
-                <div class="input-group qty" style="width:140px">
-                    <button class="btn btn-outline-ink" type="button" data-step="-1" aria-label="Kurangi">&minus;</button>
-                    <input type="number" name="qty" id="qty" value="1" min="1" max="20" class="form-control text-center" aria-label="Jumlah">
-                    <button class="btn btn-outline-ink" type="button" data-step="1" aria-label="Tambah">+</button>
-                </div>
-                <button type="submit" class="btn btn-rust btn-lg flex-grow-1">Checkout sekarang</button>
-            </form>
-            <p class="small text-muted mt-3 mb-0">Gratis ongkir untuk pembelian mulai Rp 5.000.000.</p>
+            <div class="d-flex flex-wrap gap-2">
+                <a href="{{ route('products.index') }}" class="btn btn-rust btn-lg">Kembali ke produk</a>
+                <a href="{{ route('products.index', ['kategori' => $furniture->category]) }}" class="btn btn-outline-ink btn-lg">Lihat {{ $furniture->category }} lainnya</a>
+            </div>
         </div>
     </div>
 
@@ -53,13 +48,3 @@
     @endif
 </div>
 @endsection
-
-@push('scripts')
-<script>
-    document.querySelectorAll('.qty [data-step]').forEach(btn => btn.addEventListener('click', () => {
-        const input = document.getElementById('qty');
-        const next = (parseInt(input.value) || 1) + parseInt(btn.dataset.step);
-        input.value = Math.min(20, Math.max(1, next));
-    }));
-</script>
-@endpush
