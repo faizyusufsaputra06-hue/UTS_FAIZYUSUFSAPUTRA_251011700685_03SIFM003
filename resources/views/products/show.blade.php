@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-
+    
     @if ($related->isNotEmpty())
         <section class="mt-5 pt-4">
             <h2 class="section-title mb-4">Produk terkait</h2>

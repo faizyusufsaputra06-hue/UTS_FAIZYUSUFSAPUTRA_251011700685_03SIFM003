@@ -42,7 +42,6 @@
     </div>
 </section>
 
-{{-- Koleksi terbaru --}}
 <section class="section">
     <div class="container">
         <div class="d-flex justify-content-between align-items-end mb-4">
@@ -57,7 +56,6 @@
     </div>
 </section>
 
-{{-- Kategori --}}
 <section class="section section-sand">
     <div class="container">
         <h2 class="section-title mb-4">Belanja per ruangan</h2>
@@ -75,7 +73,6 @@
     </div>
 </section>
 
-{{-- Ajakan --}}
 <section class="section">
     <div class="container">
         <div class="rf-cta">
